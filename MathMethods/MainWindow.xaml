@@ -8,14 +8,30 @@
                 <MenuItem Header="Exit" Click="MenuItem_Click">
                 </MenuItem>
             </MenuItem>
+
+            <MenuItem Header="About">
+
+            </MenuItem>
         </Menu>
         <TabControl HorizontalAlignment="Left" Height="284" Margin="0,25,0,0" VerticalAlignment="Top" Width="507">
-            <TabItem Header="TabItem">
+            <TabItem Header="GaussMethod">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-10,-8">
+                    <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="257,14,0,0" VerticalAlignment="Top" Width="195" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Name="number2">2</ComboBoxItem>
+                        <ComboBoxItem Name="number3">3</ComboBoxItem>
+                        <ComboBoxItem Name="number4">4</ComboBoxItem>
+                    </ComboBox>
+                    <Label Content="Enter number of unknowns in the system:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="SimpleIteration">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem Header="Gauss-Seidel">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
+            <TabItem Header="Determinant"/>
         </TabControl>
 
     </Grid>

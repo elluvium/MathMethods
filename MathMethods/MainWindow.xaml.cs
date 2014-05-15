@@ -30,6 +30,28 @@ namespace MathMethods
             Close();
         }
 
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboBox1.SelectedItem == number2)
+            {
+                Gauss2 gauss2 = new Gauss2();
+                gauss2.Show();
+            }
+
+            if (comboBox1.SelectedItem == number3)
+            {
+                Gauss3 gauss3 = new Gauss3();
+                gauss3.Show();
+            }
+
+            if (comboBox1.SelectedItem == number4)
+            {
+                Gauss4 gauss4 = new Gauss4();
+                gauss4.Show();
+            }
+
+        }
+
         
     }
 }
